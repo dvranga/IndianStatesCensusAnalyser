@@ -17,7 +17,7 @@ public class StateCensusAnalyser {
 
     }
 
-    private static int csvReader() throws IOException {
+    public static int csvReader() throws IOException {
         int count = 0;
         try (
                 Reader reader = Files.newBufferedReader( Paths.get( SAMPLE_CSV_FILE_PATH ) );

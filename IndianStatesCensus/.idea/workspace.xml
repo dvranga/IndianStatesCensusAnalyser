@@ -34,7 +34,7 @@
       <recent name="com.bridgelabz.indianStatesCensus" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.TestCSVState.givenNumberOfRecords_whenRecordsMatches_ShouldReturnHappy">
     <configuration name="StateCensusAnalyser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.indianStatesCensus.StateCensusAnalyser" />
       <module name="IndianStatesCensus.main" />
@@ -48,8 +48,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCSVState.givenNumberOfRecords_whenRecordsMatches_ShouldReturnHappy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.indianStatesCensus.TestCSVState.givenNumberOfRecords_whenRecordsMatches_ShouldReturnHappy&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestCSVState.givenNumberOfRecords_whenRecordsMatches_ShouldReturnHappy" />
         <item itemvalue="Application.StateCensusAnalyser" />
       </list>
     </recent_temporary>
@@ -68,21 +89,21 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="792" height="208" key="GridCell.Tab.0.bottom" timestamp="1586438955254">
+    <state width="792" height="208" key="GridCell.Tab.0.bottom" timestamp="1586440888777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="792" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586438955254" />
-    <state width="792" height="208" key="GridCell.Tab.0.center" timestamp="1586438955250">
+    <state width="792" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586440888777" />
+    <state width="792" height="208" key="GridCell.Tab.0.center" timestamp="1586440888777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="792" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586438955250" />
-    <state width="792" height="208" key="GridCell.Tab.0.left" timestamp="1586438955250">
+    <state width="792" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586440888777" />
+    <state width="792" height="208" key="GridCell.Tab.0.left" timestamp="1586440888777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="792" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586438955250" />
-    <state width="792" height="208" key="GridCell.Tab.0.right" timestamp="1586438955254">
+    <state width="792" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586440888777" />
+    <state width="792" height="208" key="GridCell.Tab.0.right" timestamp="1586440888777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="792" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586438955254" />
+    <state width="792" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586440888777" />
   </component>
 </project>
