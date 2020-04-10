@@ -12,6 +12,16 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -34,19 +44,26 @@
       <recent name="com.bridgelabz.indianStatesCensus" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestCSVState.givenStateCSVFile_WhenCorrect_ButTypeIncorrect_ShouldReturnException">
-    <configuration name="StateCensusAnalyser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.indianStatesCensus.StateCensusAnalyser" />
-      <module name="IndianStatesCensus.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bridgelabz.indianStatesCensus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.TestCSVState">
+    <configuration name="TestCSVState" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.indianStatesCensus.TestCSVState&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="TestCSVState.givenNumberOfRecords_whenRecordsMatches_ShouldReturnHappy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -68,12 +85,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCSVState.givenStateCSVFile_WhenCorrect_ButTypeIncorrect_ShouldReturnException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestCSVState.givenStateCSVFile_WhenCorrect_ButDelimiterIncorrect_ShouldReturnException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.indianStatesCensus.TestCSVState.givenStateCSVFile_WhenCorrect_ButTypeIncorrect_ShouldReturnException&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.indianStatesCensus.TestCSVState.givenStateCSVFile_WhenCorrect_ButDelimiterIncorrect_ShouldReturnException&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -130,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestCSVState.givenStateCSVFile_WhenCorrect_ButTypeIncorrect_ShouldReturnException" />
-        <item itemvalue="Gradle.TestCSVState.givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad1" />
+        <item itemvalue="Gradle.TestCSVState" />
         <item itemvalue="Gradle.TestCSVState.givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad" />
+        <item itemvalue="Gradle.TestCSVState.givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad1" />
         <item itemvalue="Gradle.TestCSVState.givenNumberOfRecords_whenRecordsMatches_ShouldReturnHappy" />
-        <item itemvalue="Application.StateCensusAnalyser" />
+        <item itemvalue="Gradle.TestCSVState.givenStateCSVFile_WhenCorrect_ButDelimiterIncorrect_ShouldReturnException" />
       </list>
     </recent_temporary>
   </component>
@@ -152,22 +169,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="63" key="GridCell.Tab.0.bottom" timestamp="1586489418254">
+    <state width="1493" height="235" key="GridCell.Tab.0.bottom" timestamp="1586497657417">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="63" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586489418254" />
-    <state width="1493" height="63" key="GridCell.Tab.0.center" timestamp="1586489418254">
+    <state width="1493" height="235" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586497657417" />
+    <state width="1493" height="235" key="GridCell.Tab.0.center" timestamp="1586497657417">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="63" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586489418254" />
-    <state width="1493" height="63" key="GridCell.Tab.0.left" timestamp="1586489418254">
+    <state width="1493" height="235" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586497657417" />
+    <state width="1493" height="235" key="GridCell.Tab.0.left" timestamp="1586497657417">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="63" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586489418254" />
-    <state width="1493" height="63" key="GridCell.Tab.0.right" timestamp="1586489418254">
+    <state width="1493" height="235" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586497657417" />
+    <state width="1493" height="235" key="GridCell.Tab.0.right" timestamp="1586497657417">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="63" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586489418254" />
+    <state width="1493" height="235" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586497657417" />
     <state width="1493" height="53" key="GridCell.Tab.1.bottom" timestamp="1586452610653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -192,9 +209,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1586449513261" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1586455421568">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1586494232782">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586455421568" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586494232782" />
   </component>
 </project>

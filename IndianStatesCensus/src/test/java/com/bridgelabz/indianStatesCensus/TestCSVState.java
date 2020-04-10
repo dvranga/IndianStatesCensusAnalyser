@@ -12,20 +12,20 @@ public class TestCSVState {
         try {
             Assert.assertEquals( 29,stateCensusAnalyser.csvReader() );
         } catch (StateAnalyserException e) {
-            e.printStackTrace();
+            Assert.assertEquals( StateAnalyserException.ExceptionType.NO_SUCH_FILE,e.type );
         }
     }
-   /* @Test
+   @Test
     public void givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad()  {
         StateCensusAnalyser stateCensusAnalyser=new StateCensusAnalyser();
         try {
             stateCensusAnalyser.csvReader();
         } catch (StateAnalyserException e) {
-                Assert.assertEquals( "ENTER PROPER FILE",e.getMessage() );
+                Assert.assertEquals( "ERROR DUE TO FILE",e.getMessage() );
             System.out.println(e.getMessage());
             }
-        }*/
-    @Test
+        }
+   /* @Test
     public void givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad1()  {
         StateCensusAnalyser stateCensusAnalyser=new StateCensusAnalyser();
         try {
@@ -34,7 +34,7 @@ public class TestCSVState {
             System.out.println(e.getMessage());
             Assert.assertEquals( StateAnalyserException.ExceptionType.NO_SUCH_FILE,e.type );
         }
-    }
+    }*/
 
     @Test
     public void givenStateCSVFile_WhenCorrect_ButTypeIncorrect_ShouldReturnException() {
@@ -45,6 +45,17 @@ public class TestCSVState {
         {
             System.out.println(e.getMessage());
             Assert.assertEquals( StateAnalyserException.ExceptionType.THIS_IS_NOT_CSV_FILE,e.type );
+        }
+    }
+    @Test
+    public void givenStateCSVFile_WhenCorrect_ButDelimiterIncorrect_ShouldReturnException() {
+        StateCensusAnalyser stateCensusAnalyser=new StateCensusAnalyser();
+        try{
+            Assert.assertEquals( 29,stateCensusAnalyser.csvReader() );
+        }catch (StateAnalyserException e)
+        {
+            System.out.println(e.getMessage());
+            Assert.assertEquals( StateAnalyserException.ExceptionType.FILE_ERROR_DUETO_DELIMETR,e.type );
         }
     }
 }

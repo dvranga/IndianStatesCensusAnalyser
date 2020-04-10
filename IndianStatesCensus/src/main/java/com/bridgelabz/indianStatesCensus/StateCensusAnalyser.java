@@ -9,6 +9,7 @@ import java.nio.file.Paths;
 import java.util.Iterator;
 
 public class StateCensusAnalyser {
+
     private static final String SAMPLE_CSV_FILE_PATH="IndiaStateCensusData.csv";
 
     /*public static void main(String[] args){
@@ -20,7 +21,7 @@ public class StateCensusAnalyser {
     public static int csvReader()throws StateAnalyserException  {
         if(!SAMPLE_CSV_FILE_PATH.contains( ".csv" ))
         {
-            throw new StateAnalyserException( StateAnalyserException.ExceptionType.INVALID_EXCEPTION,"PLEASE ENTER PROPER EXTENSION FILE" );
+            throw new StateAnalyserException( StateAnalyserException.ExceptionType.THIS_IS_NOT_CSV_FILE,"PLEASE ENTER PROPER EXTENSION FILE" );
         }
         int count = 0;
         try {
@@ -43,9 +44,8 @@ public class StateCensusAnalyser {
             throw new StateAnalyserException(StateAnalyserException.ExceptionType.NO_SUCH_FILE,"ENTER PROPER FILE",e);
         } catch (IOException e) {
             e.printStackTrace();
-        }catch (RuntimeException e)
-        {
-            throw new StateAnalyserException( StateAnalyserException.ExceptionType.SOME_OTHER_FILE_ERRORS,"ENTER PROPER FILE NAME",e );
+        }catch (RuntimeException e) {
+            throw new StateAnalyserException( StateAnalyserException.ExceptionType.FILE_ERROR_DUETO_DELIMETR,"FILE ERROR DUE TO DELIMITER ",e );
         }
         return count;
     }
