@@ -14,5 +14,5 @@ public class StateAnalyserException extends Exception {
         this.type=type;
     }
 
-    public enum ExceptionType {THIS_IS_NOT_CSV_FILE, FILE_ERROR_DUETO_DELIMETR, NO_SUCH_FILE}
+    public enum ExceptionType {THIS_IS_NOT_CSV_FILE , FILE_ERROR_DUETO_ERROR_CONTENT, Error_capturing_CSV_header, NO_SUCH_FILE}
 }

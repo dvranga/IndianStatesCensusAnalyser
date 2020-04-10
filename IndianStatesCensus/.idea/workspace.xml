@@ -65,12 +65,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCSVState.givenNumberOfRecords_whenRecordsMatches_ShouldReturnHappy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestCSVState.givenStateCSVFile_WhenCorrect_ButDelimiterIncorrect_ShouldReturnException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.indianStatesCensus.TestCSVState.givenNumberOfRecords_whenRecordsMatches_ShouldReturnHappy&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.indianStatesCensus.TestCSVState.givenStateCSVFile_WhenCorrect_ButDelimiterIncorrect_ShouldReturnException&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -85,12 +85,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCSVState.givenStateCSVFile_WhenCorrect_ButDelimiterIncorrect_ShouldReturnException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestCSVState.givenStateCSVFile_WhenCorrect_ButHEADERINCORRECT_ShouldReturnException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.indianStatesCensus.TestCSVState.givenStateCSVFile_WhenCorrect_ButDelimiterIncorrect_ShouldReturnException&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.indianStatesCensus.TestCSVState.givenStateCSVFile_WhenCorrect_ButHEADERINCORRECT_ShouldReturnException&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCSVState.givenStateCSVFile_WhenCorrect_ButTypeIncorrect_ShouldReturnException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.indianStatesCensus.TestCSVState.givenStateCSVFile_WhenCorrect_ButTypeIncorrect_ShouldReturnException&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -125,33 +145,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCSVState.givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.indianStatesCensus.TestCSVState.givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad1&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.TestCSVState" />
-        <item itemvalue="Gradle.TestCSVState.givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad" />
-        <item itemvalue="Gradle.TestCSVState.givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad1" />
-        <item itemvalue="Gradle.TestCSVState.givenNumberOfRecords_whenRecordsMatches_ShouldReturnHappy" />
+        <item itemvalue="Gradle.TestCSVState.givenStateCSVFile_WhenCorrect_ButHEADERINCORRECT_ShouldReturnException" />
+        <item itemvalue="Gradle.TestCSVState.givenStateCSVFile_WhenCorrect_ButTypeIncorrect_ShouldReturnException" />
         <item itemvalue="Gradle.TestCSVState.givenStateCSVFile_WhenCorrect_ButDelimiterIncorrect_ShouldReturnException" />
+        <item itemvalue="Gradle.TestCSVState.givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad" />
       </list>
     </recent_temporary>
   </component>
@@ -169,22 +169,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="235" key="GridCell.Tab.0.bottom" timestamp="1586497657417">
+    <state width="1493" height="195" key="GridCell.Tab.0.bottom" timestamp="1586509179869">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="235" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586497657417" />
-    <state width="1493" height="235" key="GridCell.Tab.0.center" timestamp="1586497657417">
+    <state width="1493" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586509179869" />
+    <state width="1493" height="195" key="GridCell.Tab.0.center" timestamp="1586509179868">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="235" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586497657417" />
-    <state width="1493" height="235" key="GridCell.Tab.0.left" timestamp="1586497657417">
+    <state width="1493" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586509179868" />
+    <state width="1493" height="195" key="GridCell.Tab.0.left" timestamp="1586509179868">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="235" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586497657417" />
-    <state width="1493" height="235" key="GridCell.Tab.0.right" timestamp="1586497657417">
+    <state width="1493" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586509179868" />
+    <state width="1493" height="195" key="GridCell.Tab.0.right" timestamp="1586509179868">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="235" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586497657417" />
+    <state width="1493" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586509179868" />
     <state width="1493" height="53" key="GridCell.Tab.1.bottom" timestamp="1586452610653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -201,6 +201,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="53" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586452610653" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1586505130860">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.0.1536.824@0.0.1536.824" timestamp="1586505130860" />
     <state x="511" y="41" key="refactoring.ChangeSignatureDialog" timestamp="1586450196593">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

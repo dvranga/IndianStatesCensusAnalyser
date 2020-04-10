@@ -12,13 +12,7 @@ public class StateCensusAnalyser {
 
     private static final String SAMPLE_CSV_FILE_PATH="IndiaStateCensusData.csv";
 
-    /*public static void main(String[] args){
-        System.out.println("welcome to indiaStates census analyser simulator");
-       int numberOfRecords= csvReader();
-        System.out.println("numberOfRecords "+numberOfRecords);
-    }*/
-
-    public static int csvReader()throws StateAnalyserException  {
+  public static int csvReader()throws StateAnalyserException  {
         if(!SAMPLE_CSV_FILE_PATH.contains( ".csv" ))
         {
             throw new StateAnalyserException( StateAnalyserException.ExceptionType.THIS_IS_NOT_CSV_FILE,"PLEASE ENTER PROPER EXTENSION FILE" );
@@ -45,7 +39,12 @@ public class StateCensusAnalyser {
         } catch (IOException e) {
             e.printStackTrace();
         }catch (RuntimeException e) {
-            throw new StateAnalyserException( StateAnalyserException.ExceptionType.FILE_ERROR_DUETO_DELIMETR,"FILE ERROR DUE TO DELIMITER ",e );
+            if(e.getMessage().contains( "Error capturing CSV header!" ))
+            {
+                throw new StateAnalyserException( StateAnalyserException.ExceptionType.Error_capturing_CSV_header,"Error capturing CSV header!",e );
+            }
+            else
+                throw new StateAnalyserException( StateAnalyserException.ExceptionType.FILE_ERROR_DUETO_ERROR_CONTENT,"FILE ERROR DUE TO ERROR CONTENT ",e );
         }
         return count;
     }

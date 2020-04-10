@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.indianStatesCensus.TestCSVState" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-04-10T05:47:42" hostname="LAPTOP-M8PELJBS" time="0.325">
+<testsuite name="com.bridgelabz.indianStatesCensus.TestCSVState" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-04-10T08:59:49" hostname="LAPTOP-M8PELJBS" time="5.484">
   <properties/>
-  <testcase name="givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad1" classname="com.bridgelabz.indianStatesCensus.TestCSVState" time="0.159"/>
-  <testcase name="givenStateCSVFile_WhenCorrect_ButTypeIncorrect_ShouldReturnException" classname="com.bridgelabz.indianStatesCensus.TestCSVState" time="0.036"/>
-  <testcase name="givenStateCSVFile_WhenCorrect_ButDelimiterIncorrect_ShouldReturnException" classname="com.bridgelabz.indianStatesCensus.TestCSVState" time="0.031"/>
-  <testcase name="givenNumberOfRecords_whenRecordsMatches_ShouldReturnHappy" classname="com.bridgelabz.indianStatesCensus.TestCSVState" time="0.051"/>
-  <testcase name="givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad" classname="com.bridgelabz.indianStatesCensus.TestCSVState" time="0.043"/>
+  <testcase name="givenStateCSVFile_WhenCorrect_ButTypeIncorrect_ShouldReturnException" classname="com.bridgelabz.indianStatesCensus.TestCSVState" time="5.279"/>
+  <testcase name="givenStateCSVFile_WhenCorrect_ButDelimiterIncorrect_ShouldReturnException" classname="com.bridgelabz.indianStatesCensus.TestCSVState" time="0.053"/>
+  <testcase name="givenStateCSVFile_WhenCorrect_ButHEADERINCORRECT_ShouldReturnException" classname="com.bridgelabz.indianStatesCensus.TestCSVState" time="0.058"/>
+  <testcase name="givenNumberOfRecords_whenRecordsMatches_ShouldReturnHappy" classname="com.bridgelabz.indianStatesCensus.TestCSVState" time="0.054"/>
+  <testcase name="givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad" classname="com.bridgelabz.indianStatesCensus.TestCSVState" time="0.038"/>
   <system-out><![CDATA[State:Uttar Pradesh
 State:199812341
 State:240928

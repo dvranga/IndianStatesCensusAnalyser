@@ -1,9 +1,13 @@
 package com.bridgelabz.indianStatesCensus;
 import com.opencsv.bean.CsvBindByName;
 public class CSVStateCensus {
+    @CsvBindByName(column = "State",required = true)
     private String State;
+    @CsvBindByName(column = "Population",required = true)
     private String Population;
+    @CsvBindByName(column = "AreaInSqKm",required = true)
     private String AreaInSqKm;
+    @CsvBindByName(column = "DensityPerSqKm",required = true)
     private String DensityPerSqKm;
     public String getState() {
         return State;
