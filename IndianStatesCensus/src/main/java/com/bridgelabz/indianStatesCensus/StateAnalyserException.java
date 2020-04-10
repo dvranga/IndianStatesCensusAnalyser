@@ -9,5 +9,10 @@ public class StateAnalyserException extends Exception {
         this.type=type;
     }
 
-    public enum ExceptionType {NO_SUCH_FILE}
+    public StateAnalyserException(ExceptionType type, String s) {
+        super(s);
+        this.type=type;
+    }
+
+    public enum ExceptionType {THIS_IS_NOT_CSV_FILE, INVALID_EXCEPTION, SOME_OTHER_FILE_ERRORS, NO_SUCH_FILE}
 }

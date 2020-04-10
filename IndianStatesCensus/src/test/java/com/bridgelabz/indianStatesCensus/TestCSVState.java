@@ -15,7 +15,7 @@ public class TestCSVState {
             e.printStackTrace();
         }
     }
-    @Test
+   /* @Test
     public void givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad()  {
         StateCensusAnalyser stateCensusAnalyser=new StateCensusAnalyser();
         try {
@@ -24,6 +24,27 @@ public class TestCSVState {
                 Assert.assertEquals( "ENTER PROPER FILE",e.getMessage() );
             System.out.println(e.getMessage());
             }
+        }*/
+    @Test
+    public void givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad1()  {
+        StateCensusAnalyser stateCensusAnalyser=new StateCensusAnalyser();
+        try {
+            Assert.assertEquals( 29,stateCensusAnalyser.csvReader() );
+        } catch (StateAnalyserException e) {
+            System.out.println(e.getMessage());
+            Assert.assertEquals( StateAnalyserException.ExceptionType.NO_SUCH_FILE,e.type );
         }
+    }
 
+    @Test
+    public void givenStateCSVFile_WhenCorrect_ButTypeIncorrect_ShouldReturnException() {
+        StateCensusAnalyser stateCensusAnalyser=new StateCensusAnalyser();
+        try{
+            Assert.assertEquals( 29,stateCensusAnalyser.csvReader() );
+        }catch (StateAnalyserException e)
+        {
+            System.out.println(e.getMessage());
+            Assert.assertEquals( StateAnalyserException.ExceptionType.THIS_IS_NOT_CSV_FILE,e.type );
+        }
+    }
 }

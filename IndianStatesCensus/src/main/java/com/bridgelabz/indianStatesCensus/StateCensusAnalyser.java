@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 import java.util.Iterator;
 
 public class StateCensusAnalyser {
-    private static final String SAMPLE_CSV_FILE_PATH="IndiaStateCensusDat.csv";
+    private static final String SAMPLE_CSV_FILE_PATH="IndiaStateCensusData.csv";
 
     /*public static void main(String[] args){
         System.out.println("welcome to indiaStates census analyser simulator");
@@ -18,6 +18,10 @@ public class StateCensusAnalyser {
     }*/
 
     public static int csvReader()throws StateAnalyserException  {
+        if(!SAMPLE_CSV_FILE_PATH.contains( ".csv" ))
+        {
+            throw new StateAnalyserException( StateAnalyserException.ExceptionType.INVALID_EXCEPTION,"PLEASE ENTER PROPER EXTENSION FILE" );
+        }
         int count = 0;
         try {
             Reader reader = Files.newBufferedReader( Paths.get( SAMPLE_CSV_FILE_PATH ) );
@@ -39,6 +43,9 @@ public class StateCensusAnalyser {
             throw new StateAnalyserException(StateAnalyserException.ExceptionType.NO_SUCH_FILE,"ENTER PROPER FILE",e);
         } catch (IOException e) {
             e.printStackTrace();
+        }catch (RuntimeException e)
+        {
+            throw new StateAnalyserException( StateAnalyserException.ExceptionType.SOME_OTHER_FILE_ERRORS,"ENTER PROPER FILE NAME",e );
         }
         return count;
     }
